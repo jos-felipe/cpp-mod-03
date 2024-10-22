@@ -1,33 +1,20 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: josfelip <josfelip@student.42sp.org.br>    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/22 16:00:25 by josfelip          #+#    #+#             */
-/*   Updated: 2024/10/22 16:00:31 by josfelip         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "ClapTrap.hpp"
 
 int main() {
-    // Criando uma instância de ClapTrap
-    ClapTrap claptrap("CT-42");
+    // Criando uma instância de ClapTrap com o construtor com parâmetros
+    ClapTrap claptrap1("CT-42");
 
-    // Testando o ataque
-    claptrap.attack("Enemy-1");
+    // Usando o construtor de cópia
+    ClapTrap claptrap2(claptrap1);
 
-    // Testando o recebimento de dano
-    claptrap.takeDamage(5);
+    // Usando o operador de atribuição
+    ClapTrap claptrap3;
+    claptrap3 = claptrap1;
 
-    // Testando a reparação
-    claptrap.beRepaired(3);
-
-    // Testando quando o ClapTrap fica sem energia
-    claptrap.attack("Enemy-2");
-    claptrap.attack("Enemy-3");  // Energia insuficiente
+    // Testando algumas funcionalidades
+    claptrap1.attack("Enemy-1");
+    claptrap2.takeDamage(5);
+    claptrap3.beRepaired(3);
 
     return 0;
 }

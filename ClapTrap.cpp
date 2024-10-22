@@ -1,25 +1,36 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ClapTrap.cpp                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: josfelip <josfelip@student.42sp.org.br>    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/22 15:57:05 by josfelip          #+#    #+#             */
-/*   Updated: 2024/10/22 16:04:46 by josfelip         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "ClapTrap.hpp"
 
-// Construtor
+// Construtor padrão
+ClapTrap::ClapTrap() : name("Default"), hitPoints(10), energyPoints(10), attackDamage(0) {
+    std::cout << "ClapTrap " << name << " (default) has been created!" << std::endl;
+}
+
+// Construtor com parâmetros
 ClapTrap::ClapTrap(const std::string& name) : name(name), hitPoints(10), energyPoints(10), attackDamage(0) {
     std::cout << "ClapTrap " << this->name << " has been created!" << std::endl;
 }
 
+// Construtor de cópia
+ClapTrap::ClapTrap(const ClapTrap& other) {
+    *this = other;  // Reutilizamos o operador de atribuição
+    std::cout << "ClapTrap " << other.name << " has been copied!" << std::endl;
+}
+
 // Destrutor
 ClapTrap::~ClapTrap() {
-    std::cout << "ClapTrap " << this->name << " has been destroyed!" << std::endl;
+    std::cout << "ClapTrap " << name << " has been destroyed!" << std::endl;
+}
+
+// Operador de atribuição
+ClapTrap& ClapTrap::operator=(const ClapTrap& other) {
+    if (this != &other) {
+        this->name = other.name;
+        this->hitPoints = other.hitPoints;
+        this->energyPoints = other.energyPoints;
+        this->attackDamage = other.attackDamage;
+    }
+    std::cout << "ClapTrap " << other.name << " has been assigned!" << std::endl;
+    return *this;
 }
 
 // Função de ataque

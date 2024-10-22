@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ClapTrap.hpp                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: josfelip <josfelip@student.42sp.org.br>    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/22 15:50:14 by josfelip          #+#    #+#             */
-/*   Updated: 2024/10/22 15:50:20 by josfelip         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #ifndef CLAPTRAP_HPP
 #define CLAPTRAP_HPP
 
@@ -24,11 +12,20 @@ private:
     int attackDamage;
 
 public:
-    // Construtor
+    // Construtor padrão
+    ClapTrap();
+
+    // Construtor com parâmetros
     ClapTrap(const std::string& name);
+
+    // Construtor de cópia
+    ClapTrap(const ClapTrap& other);
 
     // Destrutor
     ~ClapTrap();
+
+    // Operador de atribuição
+    ClapTrap& operator=(const ClapTrap& other);
 
     // Funções públicas
     void attack(const std::string& target);
