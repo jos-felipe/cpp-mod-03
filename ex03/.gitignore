@@ -7,9 +7,11 @@
 # Permitir o Makefile
 !Makefile
 
-# Permitir arquivos específicos dentro de ex01
-!ClapTrap.hpp
+# Permitir arquivos específicos do exercício
 !ClapTrap.cpp
-!FragTrap.hpp
+!ClapTrap.hpp
+!DiamondTrap.cpp
+!DiamondTrap.hpp
 !FragTrap.cpp
+!FragTrap.hpp
 !main.cpp
