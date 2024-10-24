@@ -3,22 +3,22 @@
 
 #include "ClapTrap.hpp"
 
-class ScavTrap : public ClapTrap {
+class FragTrap : public ClapTrap {
 public:
     // Construtor padrão
-    ScavTrap();
+    FragTrap();
 
     // Construtor com parâmetros
-    ScavTrap(const std::string& name);
+    FragTrap(const std::string& name);
 
     // Construtor de cópia
-    ScavTrap(const ScavTrap& other);
+    FragTrap(const FragTrap& other);
 
     // Destrutor
-    ~ScavTrap();
+    ~FragTrap();
 
     // Operador de atribuição
-    ScavTrap& operator=(const ScavTrap& other);
+    FragTrap& operator=(const FragTrap& other);
 
     // Função especial
     void guardGate();

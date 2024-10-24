@@ -8,7 +8,7 @@ CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
 # Arquivos fonte
-SRCS = ClapTrap.cpp ScavTrap.cpp main.cpp
+SRCS = ClapTrap.cpp FragTrap.cpp main.cpp
 
 # Arquivos objeto (mesmos nomes que SRCS, mas com extensão .o)
 OBJS = $(SRCS:.cpp=.o)

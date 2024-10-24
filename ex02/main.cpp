@@ -1,10 +1,10 @@
-#include "ScavTrap.hpp"
+#include "FragTrap.hpp"
 
 int main() {
-    // Criando uma instância de ScavTrap
-    ScavTrap scavtrap("ST-99");
+    // Criando uma instância de FragTrap
+    FragTrap scavtrap("ST-99");
 
-    // Testando o ataque do ScavTrap
+    // Testando o ataque do FragTrap
     scavtrap.attack("Target-1");
 
     // Testando o recebimento de dano
