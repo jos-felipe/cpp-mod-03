@@ -1,0 +1,15 @@
+# Ignorar todos os arquivos e pastas por padrão
+/*
+
+# Permitir o próprio .gitignore
+!.gitignore
+
+# Permitir o Makefile
+!Makefile
+
+# Permitir arquivos específicos dentro de ex01
+!ClapTrap.hpp
+!ClapTrap.cpp
+!FragTrap.hpp
+!FragTrap.cpp
+!main.cpp
