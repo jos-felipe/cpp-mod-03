@@ -21,7 +21,7 @@ public:
     FragTrap& operator=(const FragTrap& other);
 
     // Função especial
-    void guardGate();
+    void highFivesGuys(void);
 
     // Sobrescrevendo o método de ataque
     void attack(const std::string& target);

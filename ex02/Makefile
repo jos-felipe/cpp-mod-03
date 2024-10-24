@@ -1,5 +1,5 @@
 # Nome do executável
-NAME = scavtrap
+NAME = fragtrap
 
 # Compilador
 CXX = c++

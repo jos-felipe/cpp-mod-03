@@ -3,17 +3,17 @@
 // Construtor padrão
 FragTrap::FragTrap() : ClapTrap() {
     hitPoints = 100;
-    energyPoints = 50;
-    attackDamage = 20;
-    std::cout << "FragTrap " << name << " (default) has been created with 100 HP, 50 Energy, and 20 Attack Damage!" << std::endl;
+    energyPoints = 100;
+    attackDamage = 30;
+    std::cout << "FragTrap " << name << " (default) has been created with 100 HP, 100 Energy, and 30 Attack Damage!" << std::endl;
 }
 
 // Construtor com parâmetros
 FragTrap::FragTrap(const std::string& name) : ClapTrap(name) {
     hitPoints = 100;
-    energyPoints = 50;
-    attackDamage = 20;
-    std::cout << "FragTrap " << this->name << " has been created with 100 HP, 50 Energy, and 20 Attack Damage!" << std::endl;
+    energyPoints = 100;
+    attackDamage = 30;
+    std::cout << "FragTrap " << this->name << " has been created with 100 HP, 100 Energy, and 30 Attack Damage!" << std::endl;
 }
 
 // Construtor de cópia
@@ -50,7 +50,7 @@ void FragTrap::attack(const std::string& target) {
               << ", causing " << attackDamage << " points of damage!" << std::endl;
 }
 
-// Função especial guardGate()
-void FragTrap::guardGate() {
-    std::cout << "FragTrap " << name << " is now in Gatekeeper mode!" << std::endl;
+// Função especial
+void FragTrap::highFivesGuys(void) {
+    std::cout << "FragTrap " << name << " requests a high five!" << std::endl;
 }
