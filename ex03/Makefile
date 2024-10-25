@@ -1,5 +1,5 @@
 # Nome do executável
-NAME = fragtrap
+NAME = diamondtrap
 
 # Compilador
 CXX = c++
@@ -8,7 +8,7 @@ CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
 # Arquivos fonte
-SRCS = ClapTrap.cpp FragTrap.cpp main.cpp
+SRCS = main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp DiamondTrap.cpp
 
 # Arquivos objeto (mesmos nomes que SRCS, mas com extensão .o)
 OBJS = $(SRCS:.cpp=.o)

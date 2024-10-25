@@ -14,4 +14,6 @@
 !DiamondTrap.hpp
 !FragTrap.cpp
 !FragTrap.hpp
+!ScavTrap.cpp
+!ScavTrap.hpp
 !main.cpp

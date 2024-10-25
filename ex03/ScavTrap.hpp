@@ -1,27 +1,27 @@
-#ifndef FRAGTRAP_HPP
-#define FRAGTRAP_HPP
+#ifndef SCAVTRAP_HPP
+#define SCAVTRAP_HPP
 
 #include "ClapTrap.hpp"
 
-class FragTrap : virtual public ClapTrap {
+class ScavTrap : virtual public ClapTrap {
 public:
     // Construtor padrão
-    FragTrap();
+    ScavTrap();
 
     // Construtor com parâmetros
-    FragTrap(const std::string& name);
+    ScavTrap(const std::string& name);
 
     // Construtor de cópia
-    FragTrap(const FragTrap& other);
+    ScavTrap(const ScavTrap& other);
 
     // Destrutor
-    ~FragTrap();
+    ~ScavTrap();
 
     // Operador de atribuição
-    FragTrap& operator=(const FragTrap& other);
+    ScavTrap& operator=(const ScavTrap& other);
 
     // Função especial
-    void highFivesGuys(void);
+    void guardGate();
 
     // Sobrescrevendo o método de ataque
     void attack(const std::string& target);

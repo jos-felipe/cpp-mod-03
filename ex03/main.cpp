@@ -1,7 +1,8 @@
-#include "FragTrap.hpp"
+#include "DiamondTrap.hpp"
 
 int main() {
-    FragTrap frag("FR4G-TP");
-    frag.highFivesGuys();
+    DiamondTrap diamond("DI4M-TP");
+    diamond.whoAmI();
+    diamond.attack("target");
     return 0;
 }
