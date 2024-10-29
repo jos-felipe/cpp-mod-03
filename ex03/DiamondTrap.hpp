@@ -3,15 +3,20 @@
 
 #include "FragTrap.hpp"
 #include "ScavTrap.hpp"
+#include <string>
 
 class DiamondTrap : public FragTrap, public ScavTrap {
 private:
     std::string name;
 
 public:
+    DiamondTrap();
     DiamondTrap(const std::string& name);
+	DiamondTrap(const DiamondTrap& other);
+	DiamondTrap& operator=(const DiamondTrap& other);
     ~DiamondTrap();
-    void whoAmI();
+    
+	void whoAmI();
     using ScavTrap::attack; // Usar o método attack de ScavTrap
 };
 
