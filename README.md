@@ -4,7 +4,7 @@ Este projeto aborda a implementação de classes em C++ com foco na herança, pa
 
 ## Estrutura do Projeto
 
-O projeto está dividido em quatro exercícios principais, onde cada um incrementa a complexidade da hierarquia de classes. Abaixo, um resumo de cada exercício:
+O projeto é composto por quatro exercícios que se constroem progressivamente, introduzindo diversos aspectos de herança entre classes. Abaixo, um resumo de cada exercício:
 
 ### Exercício 00: Aaaaand... OPEN!
 - **Diretório**: `ex00/`
@@ -25,6 +25,11 @@ O projeto está dividido em quatro exercícios principais, onde cada um incremen
 - **Diretório**: `ex03/`
 - **Arquivos**: Arquivos dos exercícios anteriores + `DiamondTrap.{h/hpp, cpp}`
 - **Descrição**: Implementação da classe `DiamondTrap`, que herda de `ScavTrap` e `FragTrap`. Possui atributos mistos e o método `whoAmI` para exibir seu nome e o nome da instância `ClapTrap`.
+
+## Requisitos
+
+- Compilador de C++ com suporte a C++98
+- Make
 
 ## Como Executar
 
